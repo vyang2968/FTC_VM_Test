@@ -31,5 +31,7 @@ USER gitpod
 ENV PATH ${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:${ANDROID_HOME}/platform-tools:${PATH}
 
 RUN bash -c ". /home/gitpod/.sdkman/bin/sdkman-init.sh && \
-    sdk install java 17.0.3-ms && \
-    sdk default java 17.0.3-ms"
+    sdk install java 8.0.345-zulu && \
+    sdk default java 8.0.345-zulu"
+
+RUN yes | sdkmanager --licenses
