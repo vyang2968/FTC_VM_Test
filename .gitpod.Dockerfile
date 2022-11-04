@@ -15,7 +15,7 @@ USER root
 
 ENV ANDROID_HOME /opt/android-sdk-linux
 
-RUN apt update -qq && apt install zip unzip
+RUN apt update -qq && yes | apt install zip unzip
 
 RUN cd /opt && \
     wget https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip && \
