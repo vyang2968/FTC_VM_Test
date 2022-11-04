@@ -33,3 +33,5 @@ ENV PATH ${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:${ANDROID_HOME}/platfor
 RUN bash -c ". /home/gitpod/.sdkman/bin/sdkman-init.sh && \
     sdk install java 8.0.345-zulu && \
     sdk default java 8.0.345-zulu"
+
+RUN touch /home/gitpod/.android/repositories.cfg
